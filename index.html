@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form </title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -16,7 +19,56 @@
             </div>
             
         </div>
-      
+        <div class="content">
+            <form action="#" method="post">
+                <h3 class="header padding-left"> This is not a real online service! You know you need something 
+                like this in your life to help you realise your deepest dreams.
+                Sign Up <span class="italics"> now </span> to get started. 
+                </h3>
+                <h3 class="padding-left"> You <span class="italics"> Know you want to </span></h3>
+                <fieldset class="padding-left">
+                    <div class="form-row">
+                        <legend> Let's do this! </legend>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="firstName"> FIRST NAME </label>
+                            <input type="text" id="firstName" name="firstName" required minlength="2" maxlength="26">
+
+                        </div>
+                        <div class="field">
+                            <label for="lastName"> LAST NAME </label>
+                            <input type="text" id="lastName" name="lastName" required minlength="2" maxlength="26">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="mail" > EMAIL </label>
+                            <input type="email" id="mail" name="mail" required minlength="9">
+                        </div>
+                        <div class="field">
+                            <label for="phoneNum"> PHONE NUMBER</label>
+                            <input type="tel" id="phoneNum" minlength="10" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="password"> PASSWORD </label>
+                            <input type="password" name="password" id="password" minlength="8">
+                        </div>
+                        <div class="field">
+                            <label for="confirmPassword"> CONFIRM PASSWORD </label>
+                            <input type="password" id="confirmPassword"  minlength="8">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" > Create Account </button>
+
+                <p> Alread have an account? <a href="#"> Login</a>  </p>
+
+            </form>
+        </div>
     </div>
 </body>
 </html>
